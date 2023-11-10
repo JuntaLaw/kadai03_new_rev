@@ -257,5 +257,8 @@ h2 {
     display: flex;
 }
 
-
-/*  */
+#resetall-button {
+    display: none;
+}
+/* 
+ */
