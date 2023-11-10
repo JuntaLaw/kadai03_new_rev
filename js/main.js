@@ -427,17 +427,27 @@ resetButton.addEventListener("click", function() {
 tarotImage.style.display = "none";
 results.style.display = "none"; 
 
-// 結果をジャーナルに保存するボタンのクリックイベントを追加 
-// ローカルストレージから結果を取得 
-// 取得した結果のページへ遷移する
 saveButton.addEventListener("click", function() {
-    let storedResult = localStorage.getItem('result');
+    // ローカルストレージから結果を取得
+    let storedResult = localStorage.getItem('result'); 
     const result = JSON.parse(storedResult);
-    const page = result.page;
+  
+    // 保存するデータに現在のページの識別子を追加
+    const pageData = {
+      pageIdentifier: result.page, // ここでページ識別子を設定
+      content: result, 
+      clickTime: localStorage.getItem('clickTime') // clickTimeを追加
+    };
+  
+    // ローカルストレージにページデータを保存
+    localStorage.setItem('sharedData', JSON.stringify(pageData));
+  
+    // // URLに次のページの識別子をクエリパラメータとして付加して遷移
+    // window.location.href = `html/${result.page}.html?page=${result.page}`;
+       // // URLに遷移
     window.location.href = `html/${result.page}.html`;
-}); 
-
-
+  });
+  
 // トップページに戻るボタンのクリックイベントを追加 
 returnButton.addEventListener("click", function() { 
     window.location.href = "index.html";
