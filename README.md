@@ -31,6 +31,6 @@
 
 ### おまけ
 キャプチャ映像、リンク先からダウンロードもしくは、Xポストからご覧いただけます。
-![alt文](https://github.com/JuntaLaw/kadai03_new_rev/blob/main/capture/mymoview1110.mp4)
+https://github.com/JuntaLaw/kadai03_new_rev/blob/main/capture/mymoview1110.mp4
 
 https://x.com/PhirosoRosarium/status/1722811220565356668?s=20
