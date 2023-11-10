@@ -88,12 +88,5 @@ function displayMemo(memo) {
 
 
 
-// // 過去の履歴をオールリセットする機能
-// document.getElementById('resetall-button').addEventListener('click', () => { 
-//   document.getElementById('textarea').value = '';
-//   document.getElementById('resultDate').textContent = 'date';
-//   document.getElementById('resultTitle').textContent = '結果';
-//   localStorage.removeItem('memos'); // 'memoHistory' ではなく 'memos' を削除する必要があります
-//   dataArea.innerHTML = ''; // dataAreaはメモを表示するDOM要素のID
-// });
+
 
