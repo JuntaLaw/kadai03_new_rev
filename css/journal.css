@@ -201,19 +201,22 @@ h2 {
 }
 
 /* メモフォーム */
-#text {
+
+
+#textarea {
     width: 50%;
     height: 150px;
 } 
 
 /* ローカルストレージからの内容の履歴を表記する箇所 */
 .data-area {
+    width: 80%;
     height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 20px;
-    margin: 20px;
+    margin: 20px auto;
     gap: 20px; 
     background-color: rgba(255, 255, 255, 0.7);
     text-align: left;
@@ -226,6 +229,8 @@ h2 {
     justify-content: center;
     font-size: large;
     gap: 10px; 
+    border-bottom: double 5px #40200E;
+    padding-bottom: 10px;
 }
 
 /* 日付の履歴 */
@@ -242,6 +247,8 @@ h2 {
 .text_record {
     width: 50%;
     height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -249,3 +256,6 @@ h2 {
 .navigation {
     display: flex;
 }
+
+
+/*  */
