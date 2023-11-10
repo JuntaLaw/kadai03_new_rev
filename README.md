@@ -30,10 +30,7 @@
 
 
 ### おまけ
-キャプチャ画像を入れたい場合は以下のフォーマットを使用してみてください。
-その場合はキャプチャ画像用のフォルダを作成してその画像のパスを使用してみましょう。
-(srcフォルダなどをそれ用に作ってみてもいいかもしれないです)
-書き方)
-![alt文](画像URL)
-例)
-![top page capture](./src/capture1.png)
+キャプチャ映像、リンク先からダウンロードもしくは、Xポストからご覧いただけます。
+![alt文](https://github.com/JuntaLaw/kadai03_new_rev/blob/main/capture/mymoview1110.mp4)
+
+https://x.com/PhirosoRosarium/status/1722811220565356668?s=20
