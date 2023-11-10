@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>大アルカナ12_吊るされた男のページ</title> 
+  <link rel="stylesheet" href="/css/reset.css"> 
+  <link rel="stylesheet" href="/css/journal.css">
+  
+</head>
+
+<body> 
+  <!-- タロットのタイトルをヘッダーに表示 -->
+  <header>
+    <h1>12, The Hanged Man（吊るされた男）</h1>
+  </header>
+
+  <!-- タロットカードの画像と解説のエリア -->
+  <main class="mainarea">
+
+      <div class="journalpage-container">
+              <div class="imagearea">
+                <img id="tarot-image" src="/img/RWS_Tarot_12_Hanged_Man.jpg" alt="タロット図像">
+              </div> 
+
+              <div id="tarot_description">
+                <div class="paragraph"> 
+                      <h2>正位置</h2> 
+                        <div class="tarot-text">正位置の吊るされた男は、今日が自己の視点や価値観を転換し、新しい洞察を得る日であることを示唆しています。あなたは一時的な試練や犠牲を受け入れ、新たな視点から問題や状況を見る機会が訪れるでしょう。このカードは、物事を一時停止させ、深い洞察を得るために必要な時間を取ることを奨励します。今日は自分自身の信念を再評価し、成長と変化に向かう大切な一歩を踏み出す日かもしれません。</div>
+                        <div class="tarot-keyword">keyword: "犠牲、視点転換、試練、悟り、深化"</div> 
+                </div>
+                <div class="paragraph">
+                      <h2>逆位置</h2> 
+                        <div class="tarot-text">逆位置の吊るされた男は、試練や犠牲に抵抗し、固執する可能性を示唆しています。今日は新しい視点を受け入れることが難しく、古い信念や習慣にしがみついているかもしれません。逆位置の吊るされた男は、頭ごなしに拒絶するのではなく、変化と成長に向かうことの価値を理解する必要があることを教えています。試練や犠牲を受け入れ、新しい視点から物事を見直すことが今日の課題です。柔軟性を持ち、変化への抵抗を解除することが大切です。</div>
+                        <div class="tarot-keyword">keyword: "固執、浪費、無駄、不安、無駄な犠牲"</div> 
+                </div>
+              </div>
+            </div> 
+      </div> 
+
+  <!-- 占いアプリでローカルストレージに保存したデータを表示し、メモを記入するエリア-->
+      <div class="memoarea">
+      <h2>リーディング履歴</h2>
+      <!-- ここに占いアプリでローカルストレージに保存した日付と結果を表示 -->
+        <div class="input-area"> 
+          <div class="input_left">
+          <div id="resultDate" class="date">date</div>
+          <div id="resultTitle" class="results">結果を表示</div>
+        </div>
+        <!-- ここに占い結果についてのメモを記入するフォーム -->
+          <textarea id="textarea" placeholder="今日の占い結果についてのメモを入力"></textarea>
+        </div> 
+        <!-- フォームについてのボタンエリア -->
+        <div class="navigation">
+          <button id="resetmemo-button" class="btn" >メモをリセット</button>
+          <button id="savememo-button" class="btn" >メモをセーブ</button> 
+        </div> 
+
+        <!-- この下に過去の履歴を表示 -->
+        <div class="data-area">
+          <div class="data_left">
+            <div class="date_record">date</div>
+            <div class="result_record">結果</div>
+          </div>
+          <div class="text_record">メモ履歴</div>
+        </div> 
+      </div> 
+  </main>
+
+  <footer> 
+    <!--  フッターに各ページへのナビゲーションを配置-->
+    <div class="navigation">
+      <button onclick="location.href='../index.html'" class="btn">トップページに戻る</button>
+      <button onclick="location.href='../tarot.html'" class="btn" >目次に戻る</button>
+      <button onclick="location.href='../tarotap.html'" class="btn" >占いアプリへ</button>
+    </div> 
+  </footer> 
+
+  
+<!-- <script src="/js/journal.js"> </script>   -->
+</body>
+
+</html>

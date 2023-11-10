@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>大アルカナ4_皇帝のページ</title> 
+  <link rel="stylesheet" href="/css/reset.css"> 
+  <link rel="stylesheet" href="/css/journal.css">
+  
+</head>
+
+<body> 
+  <!-- タロットのタイトルをヘッダーに表示 -->
+  <header>
+    <h1>4, The Emperor（皇帝）</h1>
+  </header>
+
+  <!-- タロットカードの画像と解説のエリア -->
+  <main class="mainarea">
+
+      <div class="journalpage-container">
+              <div class="imagearea">
+                <img id="tarot-image" src="/img/RWS_Tarot_04_Emperor.jpg" alt="タロット図像">
+              </div> 
+
+              <div id="tarot_description">
+                <div class="paragraph"> 
+                      <h2>正位置</h2> 
+                        <div class="tarot-text">正位置の皇帝は、今日が権威や統制の重要性を示唆しています。あなたは強い意志力とリーダーシップ能力を発揮し、自己規律を保つことができるでしょう。プロジェクトや目標を達成するために必要な計画や組織を持ち、自己主張が必要な場面で自信を持って行動できるでしょう。また、周りの人々に影響を与え、指導力を発揮するチャンスが訪れるかもしれません。ただし、権威を行使する際に過度に支配的にならないよう、他人の意見や感情にも注意を払うことが重要です。</div>
+                        <div class="tarot-keyword">keyword: "横暴、支配欲、混乱、無秩序、支配欲"</div> 
+                </div>
+                <div class="paragraph">
+                      <h2>逆位置</h2> 
+                        <div class="tarot-text">正位置の法王は、今日が学びや精神的な成長に焦点を当てる日であることを示唆しています。あなたは宗教、哲学、教育、または伝統的な価値観に関心を持つか、これらの分野で指導的な役割を果たす可能性があります。今日は師とのつながりが強まり、知識や智慧を得るチャンスが訪れるかもしれません。また、伝統的な価値観や規範を尊重し、他人との調和を取ることが大切です。</div>
+                        <div class="tarot-keyword">keyword: "伝統、教訓、宗教、知識、指導"</div> 
+                </div>
+              </div>
+            </div> 
+      </div> 
+
+  <!-- 占いアプリでローカルストレージに保存したデータを表示し、メモを記入するエリア-->
+      <div class="memoarea">
+      <h2>リーディング履歴</h2>
+      <!-- ここに占いアプリでローカルストレージに保存した日付と結果を表示 -->
+        <div class="input-area"> 
+          <div class="input_left">
+          <div id="resultDate" class="date">date</div>
+          <div id="resultTitle" class="results">結果を表示</div>
+        </div>
+        <!-- ここに占い結果についてのメモを記入するフォーム -->
+          <textarea id="textarea" placeholder="今日の占い結果についてのメモを入力"></textarea>
+        </div> 
+        <!-- フォームについてのボタンエリア -->
+        <div class="navigation">
+          <button id="resetmemo-button" class="btn" >メモをリセット</button>
+          <button id="savememo-button" class="btn" >メモをセーブ</button> 
+        </div> 
+
+        <!-- この下に過去の履歴を表示 -->
+        <div class="data-area">
+          <div class="data_left">
+            <div class="date_record">date</div>
+            <div class="result_record">結果</div>
+          </div>
+          <div class="text_record">メモ履歴</div>
+        </div> 
+      </div> 
+  </main>
+
+  <footer> 
+    <!--  フッターに各ページへのナビゲーションを配置-->
+    <div class="navigation">
+      <button onclick="location.href='../index.html'" class="btn">トップページに戻る</button>
+      <button onclick="location.href='../tarot.html'" class="btn" >目次に戻る</button>
+      <button onclick="location.href='../tarotap.html'" class="btn" >占いアプリへ</button>
+    </div> 
+  </footer> 
+
+  
+<!-- <script src="/js/journal.js"> </script>   -->
+</body>
+
+</html>

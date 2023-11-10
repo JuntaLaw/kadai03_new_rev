@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>大アルカナ11_正義のページ</title> 
+  <link rel="stylesheet" href="/css/reset.css"> 
+  <link rel="stylesheet" href="/css/journal.css">
+  
+</head>
+
+<body> 
+  <!-- タロットのタイトルをヘッダーに表示 -->
+  <header>
+    <h1>1, The Magician（魔術師）</h1>
+  </header>
+
+  <!-- タロットカードの画像と解説のエリア -->
+  <main class="mainarea">
+
+      <div class="journalpage-container">
+              <div class="imagearea">
+                <img id="tarot-image" src="/img/RWS_Tarot_11_Justice.jpg" alt="タロット図像">
+              </div> 
+
+              <div id="tarot_description">
+                <div class="paragraph"> 
+                      <h2>正位置</h2> 
+                        <div class="tarot-text">正位置の正義は、今日が公平でバランスの取れた日であることを示唆しています。あなたは正義と公平さを尊重し、倫理的な選択をすることができるでしょう。また、過去の行動の結果や法的な問題に対処する日でもあります。このカードは、真実を求め、正しい道を選ぶ重要性を強調します。今日は公平な判断と誠実さが報われ、誤った行動に対する補正が行われるかもしれません。</div>
+                        <div class="tarot-keyword">keyword: "公平、調和、公正、判断、真実"</div> 
+                </div>
+                <div class="paragraph">
+                      <h2>逆位置</h2> 
+                        <div class="tarot-text">逆位置の正義は、公平さやバランスに欠けている可能性を示唆しています。今日は不公平や誤った判断、不道徳な行動が起きる可能性があります。また、法的な問題や紛争が解決しづらいかもしれません。逆位置の正義は、自己と他人に対して公平でない行動や判断に注意を喚起します。今日は倫理的な選択を重要視し、適切な道を選ぶことが必要です。過去の誤りを修正し、誠実さを取り戻すための機会でもあります。公平さと正義を復活させるために努力することが大切です。</div>
+                        <div class="tarot-keyword">keyword: "不公平、不和、誤った判断、冤罪、偏見"</div> 
+                </div>
+              </div>
+            </div> 
+      </div> 
+
+  <!-- 占いアプリでローカルストレージに保存したデータを表示し、メモを記入するエリア-->
+      <div class="memoarea">
+      <h2>リーディング履歴</h2>
+      <!-- ここに占いアプリでローカルストレージに保存した日付と結果を表示 -->
+        <div class="input-area"> 
+          <div class="input_left">
+          <div id="resultDate" class="date">date</div>
+          <div id="resultTitle" class="results">結果を表示</div>
+        </div>
+        <!-- ここに占い結果についてのメモを記入するフォーム -->
+          <textarea id="textarea" placeholder="今日の占い結果についてのメモを入力"></textarea>
+        </div> 
+        <!-- フォームについてのボタンエリア -->
+        <div class="navigation">
+          <button id="resetmemo-button" class="btn" >メモをリセット</button>
+          <button id="savememo-button" class="btn" >メモをセーブ</button> 
+        </div> 
+
+        <!-- この下に過去の履歴を表示 -->
+        <div class="data-area">
+          <div class="data_left">
+            <div class="date_record">date</div>
+            <div class="result_record">結果</div>
+          </div>
+          <div class="text_record">メモ履歴</div>
+        </div> 
+      </div> 
+  </main>
+
+  <footer> 
+    <!--  フッターに各ページへのナビゲーションを配置-->
+    <div class="navigation">
+      <button onclick="location.href='../index.html'" class="btn">トップページに戻る</button>
+      <button onclick="location.href='../tarot.html'" class="btn" >目次に戻る</button>
+      <button onclick="location.href='../tarotap.html'" class="btn" >占いアプリへ</button>
+    </div> 
+  </footer> 
+
+  
+<!-- <script src="/js/journal.js"> </script>   -->
+</body>
+
+</html>

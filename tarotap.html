@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>今日のタロット占い</title>
+    <link rel="stylesheet" href="css/reset.css"> 
+    <link rel="stylesheet" href="css/style.css"> 
+</head>
+
+<body>
+  <section class="wholesecion">
+    
+      <div class="content">  
+          <h1>今日のタロット占い</h1>
+          <h2>大アルカナ22枚のタロットカードで今日の運勢を占います。タロットカードをクリックしてみましょう❕</h2> 
+
+            <div class="button-area">
+                <button id="tarot-button" class="tarot-button">今日の運勢を占う</button>
+            </div> 
+
+            <div class="container_main">
+                <div class="imageboard"> 
+                    <img id="tarot-image" src="" alt="タロット図像">
+                </div>
+
+                <div id="results-div" class="results"> 
+                        <h3 class="tarot-title"></h3> 
+                        <div class="tarot-text"></div>
+                        <div class="tarot-keyword"></div>
+                        <div class="tarot-score"></div> 
+                </div>
+            </div> 
+      </div>
+    <div class="saveOrReset">
+      <button id="return-button" class="btn">トップページに戻る</button>
+      <button id="reset-button" class="btn" >リセットする</button>
+      <button id="save-button" class="btn" >結果を保存する</button>
+    </div>
+
+
+  </section> 
+   <script src="js/main.js"></script>
+</body>
+</html>

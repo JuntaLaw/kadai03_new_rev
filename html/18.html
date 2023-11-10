@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>大アルカナ18_月のページ</title> 
+  <link rel="stylesheet" href="/css/reset.css"> 
+  <link rel="stylesheet" href="/css/journal.css">
+  
+</head>
+
+<body> 
+  <!-- タロットのタイトルをヘッダーに表示 -->
+  <header>
+    <h1>18, The Moon（月）</h1>
+  </header>
+
+  <!-- タロットカードの画像と解説のエリア -->
+  <main class="mainarea">
+
+      <div class="journalpage-container">
+              <div class="imagearea">
+                <img id="tarot-image" src="/img/RWS_Tarot_18_Moon.jpg" alt="タロット図像">
+              </div> 
+
+              <div id="tarot_description">
+                <div class="paragraph"> 
+                      <h2>正位置</h2> 
+                        <div class="tarot-text">正位置の月は、今日が感情や直感に敏感な日であることを示唆しています。あなたは感情の深層にアクセスし、隠された真実や直感に注意を向けるでしょう。このカードは夢や直感を重要視し、自己探求やスピリチュアルな成長を奨励します。今日は自己の感情や深層心理に耳を傾け、非常に洞察に富む日です。ただし、不確かさや混乱にも注意が必要で、冷静さを保ちながら感情を探求することが大切です。</div>
+                        <div class="tarot-keyword">keyword: "感情、幻想、直感、謎、混乱"</div> 
+                </div>
+                <div class="paragraph">
+                      <h2>逆位置</h2> 
+                        <div class="tarot-text">逆位置の月は、感情や直感に対する混乱や拒絶がある可能性を示唆しています。今日は感情や直感を無視し、隠された真実を見逃すかもしれません。逆位置の月は、感情的な混乱や誤解を解消し、内なる直感に耳を傾ける重要性を強調します。今日は自己探求とスピリチュアルな成長に焦点を戻す日です。深層心理や感情に対してオープンであることが、今日の課題です。感情の深層にアクセスし、隠された真実を明らかにする努力をすることが大切です。</div>
+                        <div class="tarot-keyword">keyword: "混沌、幻想の崩壊、感情の整理、真実が明らかに、冷静"</div> 
+                </div>
+              </div>
+            </div> 
+      </div> 
+
+  <!-- 占いアプリでローカルストレージに保存したデータを表示し、メモを記入するエリア-->
+      <div class="memoarea">
+      <h2>リーディング履歴</h2>
+      <!-- ここに占いアプリでローカルストレージに保存した日付と結果を表示 -->
+        <div class="input-area"> 
+          <div class="input_left">
+          <div id="resultDate" class="date">date</div>
+          <div id="resultTitle" class="results">結果を表示</div>
+        </div>
+        <!-- ここに占い結果についてのメモを記入するフォーム -->
+          <textarea id="textarea" placeholder="今日の占い結果についてのメモを入力"></textarea>
+        </div> 
+        <!-- フォームについてのボタンエリア -->
+        <div class="navigation">
+          <button id="resetmemo-button" class="btn" >メモをリセット</button>
+          <button id="savememo-button" class="btn" >メモをセーブ</button> 
+        </div> 
+
+        <!-- この下に過去の履歴を表示 -->
+        <div class="data-area">
+          <div class="data_left">
+            <div class="date_record">date</div>
+            <div class="result_record">結果</div>
+          </div>
+          <div class="text_record">メモ履歴</div>
+        </div> 
+      </div> 
+  </main>
+
+  <footer> 
+    <!--  フッターに各ページへのナビゲーションを配置-->
+    <div class="navigation">
+      <button onclick="location.href='../index.html'" class="btn">トップページに戻る</button>
+      <button onclick="location.href='../tarot.html'" class="btn" >目次に戻る</button>
+      <button onclick="location.href='../tarotap.html'" class="btn" >占いアプリへ</button>
+    </div> 
+  </footer> 
+
+  
+<!-- <script src="/js/journal.js"> </script>   -->
+</body>
+
+</html>

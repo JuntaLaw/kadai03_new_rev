@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>大アルカナ9_隠者のページ</title> 
+  <link rel="stylesheet" href="/css/reset.css"> 
+  <link rel="stylesheet" href="/css/journal.css">
+  
+</head>
+
+<body> 
+  <!-- タロットのタイトルをヘッダーに表示 -->
+  <header>
+    <h1>9,  The Hermit（隠者）</h1>
+  </header>
+
+  <!-- タロットカードの画像と解説のエリア -->
+  <main class="mainarea">
+
+      <div class="journalpage-container">
+              <div class="imagearea">
+                <img id="tarot-image" src="/img/RWS_Tarot_09_Hermit.jpg" alt="タロット図像">
+              </div> 
+
+              <div id="tarot_description">
+                <div class="paragraph"> 
+                      <h2>正位置</h2> 
+                        <div class="tarot-text">正位置の隠者は、今日が内省的で自己探求に集中する日であることを示唆しています。あなたは孤独な時間を持ち、自分自身との深い対話や内なる洞察を追求することで、新たな知識や理解を得るでしょう。また、他人から離れて考え事をすることで、目標や方向性に関する重要な洞察を得るかもしれません。この期間を利用して自己成長とスピリチュアルな発展に焦点を当てることができるでしょう。</div>
+                        <div class="tarot-keyword">keyword: "孤独、内省、知識、洞察、導師"</div> 
+                </div>
+                <div class="paragraph">
+                      <h2>逆位置</h2> 
+                        <div class="tarot-text">逆位置の隠者は、孤独や内省が不足している可能性を示唆しています。今日は外部の騒音や干渉に注意が向いており、自己探求に時間を割くことが難しいかもしれません。逆位置の隠者は、自分自身と向き合い、内なる声に耳を傾ける必要があることを思い出させています。他人の期待や外部の圧力に左右されず、自己成長とスピリチュアルな旅路に焦点を戻すことが大切です。時間をかけて内なる洞察を得るための静かな瞑想や瞑想的な活動を検討することがおすすめです。</div>
+                        <div class="tarot-keyword">keyword: "孤独感、孤立、無知、孤立、分離"</div> 
+                </div>
+              </div>
+            </div> 
+      </div> 
+
+  <!-- 占いアプリでローカルストレージに保存したデータを表示し、メモを記入するエリア-->
+      <div class="memoarea">
+      <h2>リーディング履歴</h2>
+      <!-- ここに占いアプリでローカルストレージに保存した日付と結果を表示 -->
+        <div class="input-area"> 
+          <div class="input_left">
+          <div id="resultDate" class="date">date</div>
+          <div id="resultTitle" class="results">結果を表示</div>
+        </div>
+        <!-- ここに占い結果についてのメモを記入するフォーム -->
+          <textarea id="textarea" placeholder="今日の占い結果についてのメモを入力"></textarea>
+        </div> 
+        <!-- フォームについてのボタンエリア -->
+        <div class="navigation">
+          <button id="resetmemo-button" class="btn" >メモをリセット</button>
+          <button id="savememo-button" class="btn" >メモをセーブ</button> 
+        </div> 
+
+        <!-- この下に過去の履歴を表示 -->
+        <div class="data-area">
+          <div class="data_left">
+            <div class="date_record">date</div>
+            <div class="result_record">結果</div>
+          </div>
+          <div class="text_record">メモ履歴</div>
+        </div> 
+      </div> 
+  </main>
+
+  <footer> 
+    <!--  フッターに各ページへのナビゲーションを配置-->
+    <div class="navigation">
+      <button onclick="location.href='../index.html'" class="btn">トップページに戻る</button>
+      <button onclick="location.href='../tarot.html'" class="btn" >目次に戻る</button>
+      <button onclick="location.href='../tarotap.html'" class="btn" >占いアプリへ</button>
+    </div> 
+  </footer> 
+
+  
+<!-- <script src="/js/journal.js"> </script>   -->
+</body>
+
+</html>

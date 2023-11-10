@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex">
+  <title>大アルカナ19_太陽のページ</title> 
+  <link rel="stylesheet" href="/css/reset.css"> 
+  <link rel="stylesheet" href="/css/journal.css">
+  
+</head>
+
+<body> 
+  <!-- タロットのタイトルをヘッダーに表示 -->
+  <header>
+    <h1>19, The Sun（太陽）</h1>
+  </header>
+
+  <!-- タロットカードの画像と解説のエリア -->
+  <main class="mainarea">
+
+      <div class="journalpage-container">
+              <div class="imagearea">
+                <img id="tarot-image" src="/img/RWS_Tarot_19_Sun.jpg" alt="タロット図像">
+              </div> 
+
+              <div id="tarot_description">
+                <div class="paragraph"> 
+                      <h2>正位置</h2> 
+                        <div class="tarot-text">正位置の太陽は、今日が明るく幸福で成功を収める日であることを示唆しています。あなたはポジティブなエネルギーに包まれ、喜びと楽しみが満ちています。このカードは、内なる光と真実を発見し、自己表現や創造性を解き放つことを奨励します。今日は目標を達成し、周囲の人々とのつながりを強化する素晴らしい日です。幸福感と明るさを追求し、成功に向かう一歩を踏み出すことができるでしょう。</div>
+                        <div class="tarot-keyword">keyword: "幸福、明るさ、成功、喜び、自己表現"</div> 
+                </div>
+                <div class="paragraph">
+                      <h2>逆位置</h2> 
+                        <div class="tarot-text">逆位置の太陽は、幸福感が欠如している可能性を示唆しています。今日はポジティブなエネルギーや明るさが不足し、不安やネガティブな感情が支配的かもしれません。逆位置の太陽は、内なる光と真実を見失い、自己表現や創造性が制約されていることを意味します。今日は内なる調和を取り戻し、ポジティブな視点を強調する努力が必要です。幸福感を見つけるために内省し、自己表現や創造性を再発見することが大切です。困難に立ち向かい、光を取り戻すことで、幸福への道が開かれるでしょう。</div>
+                        <div class="tarot-keyword">keyword: "陰影、不安、幸福の欠如、自己評価の低下、過度の自己陶酔"</div> 
+                </div>
+              </div>
+            </div> 
+      </div> 
+
+  <!-- 占いアプリでローカルストレージに保存したデータを表示し、メモを記入するエリア-->
+      <div class="memoarea">
+      <h2>リーディング履歴</h2>
+      <!-- ここに占いアプリでローカルストレージに保存した日付と結果を表示 -->
+        <div class="input-area"> 
+          <div class="input_left">
+          <div id="resultDate" class="date">date</div>
+          <div id="resultTitle" class="results">結果を表示</div>
+        </div>
+        <!-- ここに占い結果についてのメモを記入するフォーム -->
+          <textarea id="textarea" placeholder="今日の占い結果についてのメモを入力"></textarea>
+        </div> 
+        <!-- フォームについてのボタンエリア -->
+        <div class="navigation">
+          <button id="resetmemo-button" class="btn" >メモをリセット</button>
+          <button id="savememo-button" class="btn" >メモをセーブ</button> 
+        </div> 
+
+        <!-- この下に過去の履歴を表示 -->
+        <div class="data-area">
+          <div class="data_left">
+            <div class="date_record">date</div>
+            <div class="result_record">結果</div>
+          </div>
+          <div class="text_record">メモ履歴</div>
+        </div> 
+      </div> 
+  </main>
+
+  <footer> 
+    <!--  フッターに各ページへのナビゲーションを配置-->
+    <div class="navigation">
+      <button onclick="location.href='../index.html'" class="btn">トップページに戻る</button>
+      <button onclick="location.href='../tarot.html'" class="btn" >目次に戻る</button>
+      <button onclick="location.href='../tarotap.html'" class="btn" >占いアプリへ</button>
+    </div> 
+  </footer> 
+
+  
+<!-- <script src="/js/journal.js"> </script>   -->
+</body>
+
+</html>

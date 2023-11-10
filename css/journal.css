@@ -1,0 +1,251 @@
+/* ジャーナルページ general*/
+html {
+    overflow-x: hidden; 
+} 
+
+header {
+    background-color: #40200E;
+    width: 100%;
+    height: 90px;
+    max-width: 1200px;
+    margin: 0px auto 20px; 
+    position: fixed;
+    z-index: 1;
+} 
+
+.mainarea { 
+    padding-top: 110px;
+}
+
+body { 
+    width: 100%; 
+    background-color: #262322; 
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background-image: url(https://github.com/JuntaLaw/kadai03/blob/main/img/bgimage03.png?raw=true);
+    background-size: auto;
+    background-position: center 0;
+    background-repeat: repeat; 
+} 
+
+p {
+    text-align: center;
+    color: #262322;
+    line-height: 1.7; 
+} 
+
+h1 { 
+    font-size: xx-large; 
+    color: #fff; 
+    font-family: serif; 
+    text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.5); 
+    margin: 20px auto; 
+    padding: 10px; 
+    } 
+
+    
+  /* 見出しの書式 h2 */ 
+h2 {
+    font-size: x-large;
+    color: #262322;
+    font-family: serif;
+    font-weight: bold; 
+    margin-top: 20px;
+    text-transform: uppercase;
+    /* text-shadow: 5px 5px 5px #262322; */
+} 
+
+
+.btn{ 
+    border: none;
+    display: block;
+    width: 300px; 
+    margin: 20px auto; 
+    padding: 10px 0;
+    background-color: #40200E;
+    color: #d9c6b0; 
+    font-size: large; 
+    font-family: serif; 
+    font-weight: bold;
+    text-align: center; 
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    filter: drop-shadow(5px 5px 5px #400);
+} 
+
+.btn:hover {
+    color: #F2A007;
+    filter: drop-shadow(10px 10px 10px #f2a007);
+}
+
+.btn:focus {
+    outline: 0;
+    background-color: #40200E; 
+} 
+/* ジャーナルページ メインコンテンツエリア*/
+
+.journalpage-container { 
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: auto;
+    margin: auto;
+    text-align: center; 
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px 0px;
+} 
+
+.imagearea{
+    /* width: 100%; */
+    margin: auto;
+}
+
+.tarot-title {
+    margin: 20px 20px 0; 
+    padding-bottom: 10px;;
+    color: #40200E;
+    border-bottom: double 5px #40200E;
+} 
+
+#tarot-image {
+    border: solid 10px #eeecec;
+    background-color: #8C441B;
+    width: auto;
+    height: 500px;
+    margin: 0 0 0 30px;
+    filter: drop-shadow(5px 5px 5px #40200e);
+}
+
+#tarot_description {
+    width: 60%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.paragraph {
+    background-color: rgba(255, 255, 255, 0.5);
+    filter: drop-shadow(10px 10px 10px gray); 
+    width: 100%; 
+    height: auto;
+    margin: 0px auto;
+    text-align: center; 
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; 
+    gap: 20px;
+}
+
+.tarot-text {
+    color: #40200E;
+    font-size: large;
+    font-family: serif;
+    font-weight: reguler;
+    line-height: 1.7;
+    margin: 0px;
+    padding: 0px 30px;
+    text-align: left;
+}
+
+.tarot-keyword, .tarot-score {
+    color: #40200E;
+    font-size: large;
+    font-family: sans-serif;
+    font-weight: bold;
+    line-height: 1.7;
+    margin: 0px;
+    padding: 0px 30px 30px 30px ;
+} 
+
+/* ジャーナルページ　メモエリア */
+.memoarea {
+    width: 100%;
+    height: auto;
+    margin: 20px auto; 
+    padding: 10px 0;
+    background-color: rgba(255, 255, 255, 0.7);
+} 
+
+/* ローカルストレージからの内容を表記する箇所 */
+.input-area { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    margin: 20px;
+    padding: 20px;
+    gap: 30px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.input_left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    justify-content: center;
+    font-size: large;
+}
+
+/* 日付 */
+.date {
+    width: 400px;
+}
+
+/* 結果テキスト */
+.results {
+    width: auto;
+}
+
+/* メモフォーム */
+#text {
+    width: 50%;
+    height: 150px;
+} 
+
+/* ローカルストレージからの内容の履歴を表記する箇所 */
+.data-area {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    gap: 20px; 
+    background-color: rgba(255, 255, 255, 0.7);
+    text-align: left;
+}
+
+
+.data_left {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    font-size: large;
+    gap: 10px; 
+}
+
+/* 日付の履歴 */
+.date_record { 
+    width: 400px;
+}
+
+/* 結果テキストの履歴 */
+.result_record {
+    width: auto;
+}
+
+/* メモフォームの履歴 */
+.text_record {
+    width: 50%;
+    height: auto;
+}
+
+
+/* ジャーナルページ　ナビゲーションエリア */
+.navigation {
+    display: flex;
+}
